@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Radioafición y SDR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="https://avatars.githubusercontent.com/u/62780502?v=4" alt="Antena de radioaficionado" class="header-img">
+      <h1>Portafolio de Radioafición y SDR</h1>
+      <p>Ingeniero en Redes y Telecomunicaciones | Radioaficionado 📡 | Programación y Experimentación con SDR</p>
+    </div>
+  </header>
 
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Soy radioaficionado con indicativo <strong>CA3JDZ</strong>, apasionado por la propagación de ondas, el montaje de antenas y el uso de tecnologías SDR. También me dedico a la <strong>programación de equipos de radio</strong> para diferentes modos y bandas, integrando la radioafición con mis conocimientos en telecomunicaciones y redes.</p>
+  </section>
+
+  <!-- 
+  <section>
+    <h2>Proyectos destacados</h2>
+    <ul>
+      <li><strong>Montaje de estación de radiocomunicaciones VHF/UHF:</strong> Instalación y configuración de antenas, equipos y software de apoyo.</li>
+      <li><strong>Programación de radios DMR y VHF/UHF:</strong> Creación de codeplugs, configuración de repetidores y ajuste de parámetros.</li>
+      <li><strong>Uso de SDR en exploración de bandas:</strong> Escaneo del espectro para identificar señales, propagación y experimentación.</li>
+    </ul>
+    <img src="proyectos_sdr.jpg" alt="Proyectos SDR" class="section-img">
+  </section>
+  -->
+
+  <section>
+    <h2>Habilidades técnicas</h2>
+    <ul>
+      <li>Programación de equipos de radio (VHF/UHF, DMR, HF).</li>
+      <li>Diseño e instalación de antenas para distintas bandas.</li>
+      <li>Uso de SDR para monitoreo y análisis de espectro.</li>
+      <li>Conocimientos en propagación de ondas y modos digitales (APRS, FT8, PSK31).</li>
+      <li>Integración de radioafición con redes de datos y VoIP (Echolink, DMR over IP).</li>
+    </ul>
+  </section>
+
+  <section>
+  <h2>Logros y Diplomas</h2>
+  <div class="diplomas">
+    <div class="diploma-card">
+      <img src="CA3JDZ_13.png" alt="Diploma otorgado por CE3PA" class="diploma-img" onclick="openModal(this)">
+      <p><strong>Diploma CE3PA</strong><br>Otorgado por el Radio Club Provincial Cordillera por mi participación y contribución a la radioafición.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para diplomas -->
+<div id="diplomaModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+  const modal = document.getElementById("diplomaModal");
+  const modalImg = document.getElementById("modalImg");
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("diplomaModal").style.display = "none";
+}
+</script>
+
+
+  <footer>
+    <p>© 2025 - Portafolio de Radioafición de CA3JDZ</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+}
+
+/* Secciones */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffffcc;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0d1b2a;
+  border-bottom: 3px solid #0077cc;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+ul li::before {
+  content: "📡";
+  position: absolute;
+  left: 0;
+  color: #0077cc;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Imágenes de sección */
+.section-img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+  border: 2px solid #0077cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d1b2a;
+  color: #fff;
+  margin-top: 40px;
+  border-top: 3px solid #0077cc;
+}
+
+/* Diplomas */
+.diplomas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.diploma-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.diploma-card:hover {
+  transform: scale(1.05);
+}
+
+.diploma-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
